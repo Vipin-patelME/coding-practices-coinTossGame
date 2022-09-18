@@ -1,0 +1,40 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(to right, #f9d423, #e2a139);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto';
+}
+.card-container {
+  height: 550px;
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.card-hading {
+  color: #a35200;
+  padding-top: 30px;
+}
+.card-para {
+  color: #334155;
+  font-weight: 510;
+}
+.coin-image {
+  height: 150px;
+  width: 150px;
+}
+.btn-style {
+  height: 35px;
+  width: 130px;
+  margin: 50px;
+  color: #a35200;
+  font-weight: 520;
+  background-color: #f9d423;
+  border-style: none;
+  border-radius: 8px;
+}
