@@ -15,7 +15,7 @@ class CoinToss extends Component {
   }
 
   onToss = () => {
-    const coinnumber = Math.round(Math.random() * 100)
+    const coinnumber = Math.floor(Math.random() *2)
     this.setState(prevState => ({
       number: coinnumber,
       Total: prevState.Total + 1,
