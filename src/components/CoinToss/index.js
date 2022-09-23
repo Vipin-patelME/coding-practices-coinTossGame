@@ -10,16 +10,21 @@ class CoinToss extends Component {
     number: 0,
   }
 
-  onHeadsCount = () => {
-    this.setState(prevState => ({Heads: prevState.Heads + 1}))
-  }
-
   onToss = () => {
-    const coinnumber = Math.floor(Math.random() *2)
-    this.setState(prevState => ({
-      number: coinnumber,
-      Total: prevState.Total + 1,
-    }))
+    const coinnumber = Math.floor(Math.random() * 2)
+    if (coinnumber === 0) {
+      this.setState(prevState => ({
+        Heads: prevState.Heads + 1,
+        Total: prevState.Total + 1,
+        number: coinnumber,
+      }))
+    } else {
+      this.setState(prevState => ({
+        Tails: prevState.Tails + 1,
+        Total: prevState.Total + 1,
+        number: coinnumber,
+      }))
+    }
   }
 
   render() {
